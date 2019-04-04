@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Search for Cucumber",
+        "description": "",
+        "id": "google-search;search-for-cucumber",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 266182827,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on google search page",
+            "match": {
+              "location": "GoogleSearch.i_am_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4863573,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for \"Cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 14
+                }
+              ],
+              "location": "GoogleSearch.i_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167254,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the first line on the result page should contain \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 50
+                }
+              ],
+              "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "As a web user\r\nI want to find information on google\r\nSo that I get a better understanding of the topic",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "google_search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginProfile"
+      }
+    ]
+  }
+]
