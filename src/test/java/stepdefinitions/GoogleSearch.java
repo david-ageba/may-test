@@ -12,10 +12,12 @@ public class GoogleSearch {
     @Given("^I am on google search page$")
     public void i_am_on_google_search_page() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println( "first step" );
-        // System.setProperty("webdriver.gecko.driver","C:\\DRIVERS\\selenium-browser-drivers\\geckodriver.exe");
-        // WebDriver browser = new FirefoxDriver();
-        // browser.get ("https://www.googlo.co.uk");
+        // System.out.println( "first step" );
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+         //System.setProperty("webdriver.firefox.marionette","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\geckodriver.exe");
+         //WebDriver driver = new FirefoxDriver();
+         driver.get ("https://www.googlo.co.uk");
     }
 
     @When("^I search for \"([^\"]*)\"$")
@@ -31,12 +33,4 @@ public class GoogleSearch {
 
     }
 
-    @When("^I click the smiley (\\d+)$")
-    public void iClickTheSmiley(int arg0) {
-
-    }
-
-    @And("^some happen wrong happen$")
-    public void someHappenWrongHappen() {
-    }
 }

@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>ACUKJATTrainingOne</td>
               <td>1</td>
-            <td>04 Apr 2019, 17:07</td>
+            <td>04 Apr 2019, 17:27</td>
     </tr>
   </tbody>
 </table>
@@ -130,19 +130,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Google Search</td>
-                    <td      class="passed"    >3</td>
-          <td >0</td>
-          <td >0</td>
+                    <td >0</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="271213654">271ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1989467307">1s 989ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -176,7 +176,7 @@ $(document).ready(function() {
       </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Google Search</span>
   
@@ -196,12 +196,12 @@ So that I get a better understanding of the topic</div>
   </div>
 
   
-  <span class="lead-duration duration">271ms</span>
+  <span class="lead-duration duration">1s 989ms</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Search for Cucumber</span>
   
@@ -212,15 +212,15 @@ So that I get a better understanding of the topic</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -230,18 +230,41 @@ So that I get a better understanding of the topic</div>
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Given</span>
   <span class="name">I am on google search page</span>
   
-  <span class="lead-duration duration">266ms</span>
+  <span class="lead-duration duration">1s 989ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;
+	at org.openqa.selenium.net.UrlChecker.&lt;init&gt;(UrlChecker.java:62)
+	at org.openqa.selenium.firefox.XpiDriverService.waitUntilAvailable(XpiDriverService.java:245)
+	at org.openqa.selenium.firefox.XpiDriverService.start(XpiDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at stepdefinitions.GoogleSearch.i_am_on_google_search_page(GoogleSearch.java:17)
+	at &#10045;.Given I am on google search page(google_search.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -254,11 +277,11 @@ So that I get a better understanding of the topic</div>
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">When</span>
   <span class="name">I search for &quot;Cucumber&quot;</span>
   
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -275,7 +298,7 @@ So that I get a better understanding of the topic</div>
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">the first line on the result page should contain &quot;&quot;</span>
   
