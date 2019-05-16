@@ -9,14 +9,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GoogleSearch {
+    WebDriver driver = null;
     @Given("^I am on google search page$")
     public void i_am_on_google_search_page() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        // System.out.println( "first step" );
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-         //System.setProperty("webdriver.firefox.marionette","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\geckodriver.exe");
-         //WebDriver driver = new FirefoxDriver();
+        System.setProperty("user.dir", System.getProperty("\\driver\\chromedriver.exe"));
+        // System.setProperty("webdriver.chrome.driver","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");
+         WebDriver driver = new ChromeDriver();
+        // System.setProperty("webdriver.firefox.marionette","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\geckodriver.exe");
+        // WebDriver driver = new FirefoxDriver();
          driver.get ("https://www.googlo.co.uk");
     }
 

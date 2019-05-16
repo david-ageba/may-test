@@ -128,20 +128,13 @@
                   </a> <!-- feature(Google Search) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Google Search)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at TestRunner.TestRunner.feature(TestRunner.java:31)
-Caused by: java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;
-	at org.openqa.selenium.net.UrlChecker.&lt;init&gt;(UrlChecker.java:62)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+Caused by: java.lang.NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:460)
+	at java.util.Properties.setProperty(Properties.java:166)
+	at java.lang.System.setProperty(System.java:796)
 	at stepdefinitions.GoogleSearch.i_am_on_google_search_page(GoogleSearch.java:17)
 	at ✽.Given I am on google search page(google_search.feature:8)
 ... Removed 29 stack frames
@@ -215,12 +208,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'TestRunner.TestRunner')
-data.setCell(0, 3, 2350);
+data.setCell(0, 3, 303);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 303 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -255,11 +248,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Google Search)</span>
-                <span class="method-start">1071 ms</span>
+                <span class="method-start">579 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">3441 ms</span>
+                <span class="method-start">902 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

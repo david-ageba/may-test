@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>ACUKJATTrainingOne</td>
               <td>1</td>
-            <td>04 Apr 2019, 17:27</td>
+            <td>16 May 2019, 12:20</td>
     </tr>
   </tbody>
 </table>
@@ -126,7 +126,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">1s 989ms</span>
+  <span class="lead-duration duration">243ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -167,7 +167,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on google search page</span>
   
-  <span class="lead-duration duration">1s 989ms</span>
+  <span class="lead-duration duration">243ms</span>
 
   </div>
 
@@ -176,19 +176,13 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;</a>
+          <a>java.lang.NullPointerException</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;
-	at org.openqa.selenium.net.UrlChecker.&lt;init&gt;(UrlChecker.java:62)
-	at org.openqa.selenium.firefox.XpiDriverService.waitUntilAvailable(XpiDriverService.java:245)
-	at org.openqa.selenium.firefox.XpiDriverService.start(XpiDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+        <pre>java.lang.NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:460)
+	at java.util.Properties.setProperty(Properties.java:166)
+	at java.lang.System.setProperty(System.java:796)
 	at stepdefinitions.GoogleSearch.i_am_on_google_search_page(GoogleSearch.java:17)
 	at &#10045;.Given I am on google search page(google_search.feature:8)
 </pre>
@@ -230,7 +224,7 @@ $(document).ready(function() {
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">the first line on the result page should contain &quot;&quot;</span>
+  <span class="name">the first line on the result page should contain &quot;cucumber&quot;</span>
   
   <span class="lead-duration duration">000ms</span>
 
