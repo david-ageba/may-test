@@ -39,7 +39,7 @@ formatter.match({
   "location": "GoogleSearch.i_am_on_google_search_page()"
 });
 formatter.result({
-  "duration": 266182827,
+  "duration": 228791467,
   "status": "passed"
 });
 formatter.match({
@@ -52,7 +52,7 @@ formatter.match({
   "location": "GoogleSearch.i_search_for(String)"
 });
 formatter.result({
-  "duration": 4863573,
+  "duration": 3729493,
   "status": "passed"
 });
 formatter.match({
@@ -65,7 +65,7 @@ formatter.match({
   "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
 });
 formatter.result({
-  "duration": 167254,
+  "duration": 104534,
   "status": "passed"
 });
 });
