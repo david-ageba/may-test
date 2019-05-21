@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 228791467,
+              "duration": 8080424003,
               "status": "passed"
             },
             "line": 8,
@@ -24,8 +24,9 @@
           },
           {
             "result": {
-              "duration": 3729493,
-              "status": "passed"
+              "duration": 16291819,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.GoogleSearch.i_search_for(GoogleSearch.java:28)\r\n\tat ✽.When I search for \"Cucumber\"(google_search.feature:9)\r\n",
+              "status": "failed"
             },
             "line": 9,
             "name": "I search for \"Cucumber\"",
@@ -42,20 +43,69 @@
           },
           {
             "result": {
-              "duration": 104534,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
-            "name": "the first line on the result page should contain \"cucumber\"",
+            "name": "the page title should contain \"cucumber\"",
             "match": {
               "arguments": [
                 {
                   "val": "cucumber",
-                  "offset": 50
+                  "offset": 31
                 }
               ],
               "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
             },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Confirm search result for Cucumber",
+        "description": "",
+        "id": "google-search;confirm-search-result-for-cucumber",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5131225432,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on google search page",
+            "match": {
+              "location": "GoogleSearch.i_am_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 500479,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.GoogleSearch.i_search_for(GoogleSearch.java:28)\r\n\tat ✽.When I search for \"Cucumber\"(google_search.feature:14)\r\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "I search for \"Cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 14
+                }
+              ],
+              "location": "GoogleSearch.i_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "the first line on the result page should contain \"cucumber\"",
+            "match": {},
             "keyword": "Then "
           }
         ]
@@ -69,7 +119,7 @@
     "tags": [
       {
         "line": 1,
-        "name": "@LoginProfile"
+        "name": "@GoogleSearch"
       }
     ]
   }

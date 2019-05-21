@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>ACUKJATTrainingOne</td>
               <td>1</td>
-            <td>20 May 2019, 13:09</td>
+            <td>20 May 2019, 15:14</td>
     </tr>
   </tbody>
 </table>
@@ -141,8 +141,8 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="232625494">232ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1036370346">1s 036ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -182,11 +182,7 @@ $(document).ready(function() {
   </div>
 
   
-<<<<<<< HEAD
-  <span class="lead-duration duration">243ms</span>
-=======
-  <span class="lead-duration duration">232ms</span>
->>>>>>> e1aea138f01c59142ebd8c8bc9aebbc1f64db978
+  <span class="lead-duration duration">1s 036ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -227,11 +223,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on google search page</span>
   
-<<<<<<< HEAD
-  <span class="lead-duration duration">243ms</span>
-=======
-  <span class="lead-duration duration">228ms</span>
->>>>>>> e1aea138f01c59142ebd8c8bc9aebbc1f64db978
+  <span class="lead-duration duration">1s 036ms</span>
 
   </div>
 
@@ -240,14 +232,21 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>java.lang.NullPointerException</a>
+          <a>java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException
-	at java.util.Hashtable.put(Hashtable.java:460)
-	at java.util.Properties.setProperty(Properties.java:166)
-	at java.lang.System.setProperty(System.java:796)
-	at stepdefinitions.GoogleSearch.i_am_on_google_search_page(GoogleSearch.java:17)
+        <pre>java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;
+	at org.openqa.selenium.net.UrlChecker.&lt;init&gt;(UrlChecker.java:62)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepdefinitions.GoogleSearch.i_am_on_google_search_page(GoogleSearch.java:18)
 	at &#10045;.Given I am on google search page(google_search.feature:8)
 </pre>
       </div>
@@ -269,11 +268,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I search for &quot;Cucumber&quot;</span>
   
-<<<<<<< HEAD
   <span class="lead-duration duration">000ms</span>
-=======
-  <span class="lead-duration duration">003ms</span>
->>>>>>> e1aea138f01c59142ebd8c8bc9aebbc1f64db978
 
   </div>
 
