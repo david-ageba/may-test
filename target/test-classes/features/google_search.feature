@@ -1,4 +1,4 @@
-@LoginProfile
+@GoogleSearch
 Feature: Google Search
   As a web user
   I want to find information on google
@@ -7,4 +7,9 @@ Feature: Google Search
   Scenario: Search for Cucumber
     Given I am on google search page
     When I search for "Cucumber"
-    Then the first line on the result page should contain ""
+    Then the page title should contain "cucumber"
+
+  Scenario: Confirm search result for Cucumber
+    Given I am on google search page
+    When I search for "Cucumber"
+    Then the first line on the result page should contain "cucumber"

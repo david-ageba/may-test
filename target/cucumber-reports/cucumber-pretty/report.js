@@ -8,7 +8,7 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@LoginProfile"
+      "name": "@GoogleSearch"
     }
   ]
 });
@@ -32,14 +32,14 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "the first line on the result page should contain \"\"",
+  "name": "the page title should contain \"cucumber\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "GoogleSearch.i_am_on_google_search_page()"
 });
 formatter.result({
-  "duration": 228791467,
+  "duration": 8080424003,
   "status": "passed"
 });
 formatter.match({
@@ -52,20 +52,68 @@ formatter.match({
   "location": "GoogleSearch.i_search_for(String)"
 });
 formatter.result({
-  "duration": 3729493,
-  "status": "passed"
+  "duration": 16291819,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.GoogleSearch.i_search_for(GoogleSearch.java:28)\r\n\tat ✽.When I search for \"Cucumber\"(google_search.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "",
-      "offset": 50
+      "val": "cucumber",
+      "offset": 31
     }
   ],
   "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
 });
 formatter.result({
-  "duration": 104534,
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Confirm search result for Cucumber",
+  "description": "",
+  "id": "google-search;confirm-search-result-for-cucumber",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 13,
+  "name": "I am on google search page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 14,
+  "name": "I search for \"Cucumber\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "the first line on the result page should contain \"cucumber\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "GoogleSearch.i_am_on_google_search_page()"
+});
+formatter.result({
+  "duration": 5131225432,
   "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Cucumber",
+      "offset": 14
+    }
+  ],
+  "location": "GoogleSearch.i_search_for(String)"
+});
+formatter.result({
+  "duration": 500479,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.GoogleSearch.i_search_for(GoogleSearch.java:28)\r\n\tat ✽.When I search for \"Cucumber\"(google_search.feature:14)\r\n",
+  "status": "failed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });
