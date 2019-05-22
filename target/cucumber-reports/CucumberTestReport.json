@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 228791467,
+              "duration": 11044881436,
               "status": "passed"
             },
             "line": 8,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 3729493,
+              "duration": 3857248610,
               "status": "passed"
             },
             "line": 9,
@@ -42,19 +42,78 @@
           },
           {
             "result": {
-              "duration": 104534,
+              "duration": 114184813,
               "status": "passed"
             },
             "line": 10,
-            "name": "the first line on the result page should contain \"\"",
+            "name": "the page title should contain \"cucumber\"",
             "match": {
               "arguments": [
                 {
-                  "val": "",
-                  "offset": 50
+                  "val": "cucumber",
+                  "offset": 31
                 }
               ],
               "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Confirm search result for Cucumber",
+        "description": "",
+        "id": "google-search;confirm-search-result-for-cucumber",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5400846420,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on google search page",
+            "match": {
+              "location": "GoogleSearch.i_am_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1860718684,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for \"Java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 14
+                }
+              ],
+              "location": "GoogleSearch.i_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4630608,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepdefinitions.GoogleSearch.theFirstLineOnTheResultPageShouldContain(GoogleSearch.java:44)\r\n\tat ✽.Then the first line on the result page should contain \"Java\"(google_search.feature:15)\r\n",
+              "status": "pending"
+            },
+            "line": 15,
+            "name": "the first line on the result page should contain \"Java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 50
+                }
+              ],
+              "location": "GoogleSearch.theFirstLineOnTheResultPageShouldContain(String)"
             },
             "keyword": "Then "
           }
@@ -69,7 +128,11 @@
     "tags": [
       {
         "line": 1,
-        "name": "@LoginProfile"
+        "name": "@GoogleSearch"
+      },
+      {
+        "line": 1,
+        "name": "@test"
       }
     ]
   }

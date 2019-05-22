@@ -8,7 +8,11 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@LoginProfile"
+      "name": "@GoogleSearch"
+    },
+    {
+      "line": 1,
+      "name": "@test"
     }
   ]
 });
@@ -32,14 +36,14 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "the first line on the result page should contain \"\"",
+  "name": "the page title should contain \"cucumber\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "GoogleSearch.i_am_on_google_search_page()"
 });
 formatter.result({
-  "duration": 228791467,
+  "duration": 11044881436,
   "status": "passed"
 });
 formatter.match({
@@ -52,20 +56,77 @@ formatter.match({
   "location": "GoogleSearch.i_search_for(String)"
 });
 formatter.result({
-  "duration": 3729493,
+  "duration": 3857248610,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "",
-      "offset": 50
+      "val": "cucumber",
+      "offset": 31
     }
   ],
   "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
 });
 formatter.result({
-  "duration": 104534,
+  "duration": 114184813,
   "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Confirm search result for Cucumber",
+  "description": "",
+  "id": "google-search;confirm-search-result-for-cucumber",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 13,
+  "name": "I am on google search page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 14,
+  "name": "I search for \"Java\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "the first line on the result page should contain \"Java\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "GoogleSearch.i_am_on_google_search_page()"
+});
+formatter.result({
+  "duration": 5400846420,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Java",
+      "offset": 14
+    }
+  ],
+  "location": "GoogleSearch.i_search_for(String)"
+});
+formatter.result({
+  "duration": 1860718684,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Java",
+      "offset": 50
+    }
+  ],
+  "location": "GoogleSearch.theFirstLineOnTheResultPageShouldContain(String)"
+});
+formatter.result({
+  "duration": 4630608,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepdefinitions.GoogleSearch.theFirstLineOnTheResultPageShouldContain(GoogleSearch.java:44)\r\n\tat ✽.Then the first line on the result page should contain \"Java\"(google_search.feature:15)\r\n",
+  "status": "pending"
 });
 });
