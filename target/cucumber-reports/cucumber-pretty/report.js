@@ -43,7 +43,7 @@ formatter.match({
   "location": "GoogleSearch.i_am_on_google_search_page()"
 });
 formatter.result({
-  "duration": 11044881436,
+  "duration": 6653116177,
   "status": "passed"
 });
 formatter.match({
@@ -56,7 +56,7 @@ formatter.match({
   "location": "GoogleSearch.i_search_for(String)"
 });
 formatter.result({
-  "duration": 3857248610,
+  "duration": 2525780660,
   "status": "passed"
 });
 formatter.match({
@@ -69,7 +69,7 @@ formatter.match({
   "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
 });
 formatter.result({
-  "duration": 114184813,
+  "duration": 1176264308,
   "status": "passed"
 });
 formatter.scenario({
@@ -99,7 +99,7 @@ formatter.match({
   "location": "GoogleSearch.i_am_on_google_search_page()"
 });
 formatter.result({
-  "duration": 5400846420,
+  "duration": 5125220107,
   "status": "passed"
 });
 formatter.match({
@@ -112,7 +112,7 @@ formatter.match({
   "location": "GoogleSearch.i_search_for(String)"
 });
 formatter.result({
-  "duration": 1860718684,
+  "duration": 2018267283,
   "status": "passed"
 });
 formatter.match({
@@ -125,8 +125,7 @@ formatter.match({
   "location": "GoogleSearch.theFirstLineOnTheResultPageShouldContain(String)"
 });
 formatter.result({
-  "duration": 4630608,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepdefinitions.GoogleSearch.theFirstLineOnTheResultPageShouldContain(GoogleSearch.java:44)\r\n\tat ✽.Then the first line on the result page should contain \"Java\"(google_search.feature:15)\r\n",
-  "status": "pending"
+  "duration": 1215111832,
+  "status": "passed"
 });
 });
