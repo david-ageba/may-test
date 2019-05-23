@@ -9,13 +9,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 
 public class GoogleSearch {
     public static WebDriver driver;
     @Given("^I am on google search page$")
     public static void i_am_on_google_search_page() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-       // System.setProperty("user.dir", System.getProperty("\\driver\\chromedriver.exe"));
          System.setProperty("webdriver.chrome.driver", "C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");
          driver = new ChromeDriver();
         // System.setProperty("webdriver.firefox.marionette","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\geckodriver.exe");
@@ -34,13 +33,16 @@ public class GoogleSearch {
     public void the_first_line_on_the_result_page_should_contain(String arg1)   {
         driver.getTitle().contains(arg1);
         //driver.close();
-        //driver.quit();
+        driver.quit();
 
     }
 
     @Then("^the first line on the result page should contain \"([^\"]*)\"$")
     public void theFirstLineOnTheResultPageShouldContain(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        WebElement searchResult = driver.findElement(By.cssSelector("#rso > div:nth-child(1) > div > div > div > div > div.r > a > h3"));
+        String string = searchResult.getText();
+        Assert.assertTrue(string.contains(arg0));
+        driver.quit();
     }
 }
