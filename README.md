@@ -5,4 +5,3 @@ may team project
 https://gitignore.io/api/java,intellij
 
 * Ignoring tracked file: git rm --cached filename
-
