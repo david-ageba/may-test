@@ -15,8 +15,6 @@ public class GoogleSearch {
     public static WebDriver driver;
     @Given("^I am on google search page$")
     public static void i_am_on_google_search_page() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-       // System.setProperty("user.dir", System.getProperty("\\driver\\chromedriver.exe"));
          System.setProperty("webdriver.chrome.driver", "C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");
          driver = new ChromeDriver();
         // System.setProperty("webdriver.firefox.marionette","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\geckodriver.exe");
