@@ -110,5 +110,23 @@ fabric.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
 # End of https://www.gitignore.io/api/java,intellij
+
+# Terget files
+**/terget
+target/cucumber-reports/cucumber-pretty/report.js
+target/surefire-reports/Surefire\ suite/Surefire\ test.html
+target/surefire-reports/Surefire\ suite/Surefire\ test.xml
+target/surefire-reports/TEST-TestRunner.TestRunner.xml
+target/surefire-reports/TestRunner.TestRunner.txt
+target/surefire-reports/emailable-report.html
+target/surefire-reports/index.html
+target/surefire-reports/junitreports/
+target/surefire-reports/old/Surefire\ suite/methods-alphabetical.html
+target/surefire-reports/old/Surefire\ suite/methods.html
+target/surefire-reports/testng-results.xml
+target/test-classes/features/
+
+
+
+.idea/**/libraries
