@@ -1,0 +1,138 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Search result page contains search query",
+        "description": "",
+        "id": "google-search;search-result-page-contains-search-query",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9120174831,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on google search page",
+            "match": {
+              "location": "GoogleSearch.i_am_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3083161529,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for \"Cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 14
+                }
+              ],
+              "location": "GoogleSearch.i_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1207375609,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the page title should contain \"cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber",
+                  "offset": 31
+                }
+              ],
+              "location": "GoogleSearch.the_first_line_on_the_result_page_should_contain(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Google first result description contains searched query",
+        "description": "",
+        "id": "google-search;google-first-result-description-contains-searched-query",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5189698825,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on google search page",
+            "match": {
+              "location": "GoogleSearch.i_am_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2155775014,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for \"Java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 14
+                }
+              ],
+              "location": "GoogleSearch.i_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1041230472,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the first line on the result page should contain \"Java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 50
+                }
+              ],
+              "location": "GoogleSearch.theFirstLineOnTheResultPageShouldContain(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "As a web user\r\nI want to find information on google\r\nSo that I get a better understanding of the topic",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "google_search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@GoogleSearch"
+      },
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]
