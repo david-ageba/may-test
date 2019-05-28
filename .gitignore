@@ -114,6 +114,7 @@ hs_err_pid*
 
 # Terget files
 **/terget
+target/surefire-reports/old/Surefire\ suite/classes.html
 target/cucumber-reports/cucumber-pretty/report.js
 target/surefire-reports/Surefire\ suite/Surefire\ test.html
 target/surefire-reports/Surefire\ suite/Surefire\ test.xml
@@ -126,6 +127,8 @@ target/surefire-reports/old/Surefire\ suite/methods-alphabetical.html
 target/surefire-reports/old/Surefire\ suite/methods.html
 target/surefire-reports/testng-results.xml
 target/test-classes/features/
+target/cucumber-reports/CucumberTestReport.json
+
 
 
 
