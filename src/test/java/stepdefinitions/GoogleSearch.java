@@ -15,7 +15,10 @@ public class GoogleSearch {
     public static WebDriver driver;
     @Given("^I am on google search page$")
     public static void i_am_on_google_search_page() throws Throwable {
-         System.setProperty("webdriver.chrome.driver", "C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");
+        String path = System.getProperty("user.dir");
+        System.out.println(path);
+        System.setProperty("webdriver.chrome.driver", path+"\\driver\\chromedriver.exe");
+         // System.setProperty("webdriver.chrome.driver", "C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");
          driver = new ChromeDriver();
         // System.setProperty("webdriver.firefox.marionette","C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\geckodriver.exe");
         // WebDriver driver = new FirefoxDriver();
