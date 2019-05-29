@@ -113,6 +113,8 @@ hs_err_pid*
 # End of https://www.gitignore.io/api/java,intellij
 
 # Terget files
+*/target/*
+*/target/**
 **/terget
 target/surefire-reports/old/Surefire\ suite/classes.html
 target/cucumber-reports/cucumber-pretty/report.js
