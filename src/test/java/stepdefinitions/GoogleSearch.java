@@ -17,19 +17,19 @@ public class GoogleSearch {
     public static void i_am_on_google_search_page() throws Throwable {
 
         // EXPERT SETUP WITH OS AND RELATIVE PATH
-        String os = System.getProperty("os.name").toLowerCase();
-                driver = new ChromeDriver();
-        if (os.contains("mac")){
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver");
-        } else {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
-    }
+    //    String os = System.getProperty("os.name").toLowerCase();
+    //            driver = new ChromeDriver();
+    //    if (os.contains("mac")){
+    //        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver");
+     //   } else {
+    //        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
+   // }
 
         // INTERMEDIATE SETUP WITH RELATIVE PATH
-        // String path = System.getProperty("user.dir");
-        // System.out.println(path);
-        // System.setProperty("webdriver.chrome.driver", path+"\\driver\\chromedriver.exe");
-        // driver = new ChromeDriver();
+         String path = System.getProperty("user.dir");
+         System.out.println(path);
+         System.setProperty("webdriver.chrome.driver", path+"\\driver\\chromedriver.exe");
+         driver = new ChromeDriver();
 
         // BASIC SETUP WITH ABSOLUTE PATH TO DRIVERS
         // System.setProperty("webdriver.chrome.driver", "C:\\Users\\DavidAgeba\\JATTrainingOne\\ACUKJATTrainingOne\\driver\\chromedriver.exe");

@@ -132,6 +132,6 @@ target/test-classes/features/
 target/cucumber-reports/CucumberTestReport.json
 
 
-
+/target/
 
 .idea/**/libraries
